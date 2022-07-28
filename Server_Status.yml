@@ -1,0 +1,12 @@
+---
+- name: Check Server reachability status
+  hosts: all
+  remote_user: siba
+  tasks:
+    - name: ping Server
+      ping:
+      register: ping_status
+    
+    - name: Pint the status
+      debug:
+        msg: "{{ ansible_fqdn }} is reachable from Ansible tower"
