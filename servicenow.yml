@@ -1,0 +1,5 @@
+---
+- name: Servicenow playbook
+  hosts: all
+  roles:
+    - servicenow
