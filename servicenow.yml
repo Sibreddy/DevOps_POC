@@ -1,5 +1,6 @@
 ---
 - name: Servicenow playbook
   hosts: all
+  gather_facts: false
   roles:
     - servicenow
