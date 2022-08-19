@@ -1,2 +1,8 @@
 ---
 # defaults file for servicenow
+CALLER_NAME: "N Siba Kumar Reddy"
+SN_IN_SHORT_DESCRPTION: "Install GitHub on DevOps server"
+SN_IN_DESCRIPTION: ""
+SN_IN_IMPACT: 
+SN_IN_URGENCY:
+

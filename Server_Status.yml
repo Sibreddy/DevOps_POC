@@ -10,3 +10,7 @@
     - name: Pint the status
       debug:
         msg: "{{ ansible_fqdn }} is reachable from Ansible tower"
+
+    - name: Check the hostname 
+      debug:
+        msg: "{{ inventory_hostname }}"

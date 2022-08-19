@@ -1,0 +1,17 @@
+- name: create new incident
+  servicenow.itsm.incident:
+    instance:
+      host: "{{ SN_HOSTNAME }}"
+      username: "{{ SN_USERNAME }}"
+      password: "{{ SN_PASSWORD }}"
+    state: new
+    caller: "{{ CALLER_NAME }}"
+    short_description: "{{ SN_IN_SHORT_DESCRPTION }}"
+    description: "{{ SN_IN_DESCRIPTION }}"
+    impact: "{{ SN_IN_IMPACT }}"
+    urgency: "{{ SN_IN_URGENCY }}"
+  register: SN_NEW_INCIDENT
+
+- name: print the incident detsils
+  debug:
+    var: SN_NEW_INCIDENT

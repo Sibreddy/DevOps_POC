@@ -1,10 +1,4 @@
 ---
 # tasks file for servicenow
 - name: create new incident
-  servicenow.itsm.incident:
-    instance:
-      host: "{{ SN_HOSTNAME }}"
-      username: "{{ SN_USERNAME }}"
-      password: "{{ SN_PASSWORD }}"
-    state: new
-    short_description: 'Demo Incident'
+  include_tasks: SN_INCIDENT.yml
