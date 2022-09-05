@@ -1,0 +1,14 @@
+---
+- name: user playbook
+  hosts: localhost
+  tasks:
+    - name: createing users
+      user:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - user1
+        - user2
+        - user3
+        - user4
+        - user5
