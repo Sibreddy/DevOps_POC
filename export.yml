@@ -1,0 +1,7 @@
+---
+- name: Export AAP 
+  hosts: localhost
+  tasks:
+    - name: Exporting Ansible Automation Platform
+      tower_export:
+        all: true
