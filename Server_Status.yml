@@ -14,3 +14,10 @@
     - name: Check the hostname 
       debug:
         msg: "{{ inventory_hostname }}"
+- name: 2nd play
+  hosts: all
+  tasks:
+     - name: create user
+       user:
+         name: user1
+         state: present
