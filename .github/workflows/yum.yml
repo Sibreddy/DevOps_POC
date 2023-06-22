@@ -1,8 +1,1 @@
----
-- name: Install pkg
-  hosts: all
-  tasks:
-    - name: install httpd pkg
-      yum:
-        nam: httpd
-        state: latest
+
